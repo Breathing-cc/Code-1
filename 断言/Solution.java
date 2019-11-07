@@ -7,8 +7,8 @@ public class Solution {
         int m = 0;
         while(reader.hasNextDouble()){
             double x = reader.nextDouble();
-            assert x > 100 :"这是一个非法的成绩数据";
-            assert x < 0 :"这是一个非法的成绩数据";
+            assert x < 100 :"这是一个非法的成绩数据";
+            assert x > 0 :"这是一个非法的成绩数据";
             m = m + 1;
             sum = sum + x;
         }
