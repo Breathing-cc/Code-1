@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 public class UsePool {
     public static void main(String[] args) {
         ExecutorService pool = Executors.newFixedThreadPool(1);
-        pool.execute(new Runnable() {
+        pool.execute (new Runnable() {
             @Override
             public void run() {
                 while (true){

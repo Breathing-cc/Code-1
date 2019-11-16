@@ -9,7 +9,7 @@ public class ThreadPoolV2 {
     private int currentThreads = 0;
     private Thread[]works = new Thread[maxThreads];
 
-    public void execute(Runnable cmd)throws InterruptedException {
+    public void execute(Runnable cmd) throws InterruptedException {
         if (currentThreads == maxThreads) {
             workQueue.put(cmd);
         } else {

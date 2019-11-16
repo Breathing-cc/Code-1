@@ -5,7 +5,7 @@ import java.util.concurrent.BlockingQueue;
 
 //固定线程池，一开始是就申请好线程
 public class ThreadPoolV1 {
-    private BlockingQueue<Runnable>workQueue = new ArrayBlockingQueue<>(10);
+    private BlockingQueue<Runnable> workQueue = new ArrayBlockingQueue<>(10);
     private Thread[] workers = new Thread[5];
 
     ThreadPoolV1(){
